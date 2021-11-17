@@ -24,7 +24,7 @@ function App() {
     <ApolloProvider client={client} className="app-background-color">
       <Router>
         <>
-          <Nav_bar />
+          <Navbar />
           <Switch className="app-background-color">
             <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
