@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { NavBar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './signup';
 import LoginForm from './login';
 
