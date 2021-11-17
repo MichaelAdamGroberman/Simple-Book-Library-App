@@ -1,5 +1,5 @@
 {
-  "name": "Modern-Library-App",
+  "name": "modern-library",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -10,16 +10,12 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "heroku-postbuild": "cd client && npm run build"
   },
-  "engines": {
-    "node": "14.x",
-    "npm": "7.x"
-  },
   "keywords": [],
   "author": "Michael Adam Groberman",
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.19.2",
-    "bcrypt": "^4.0.1",
+    "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.12.6",

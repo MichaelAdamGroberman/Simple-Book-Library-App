@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
-import SearchBooks from '/pages/SearchBooks';
-import SavedBooks from '/pages/SavedBooks';
-import Navigation from 'components/Navigation';
+import SearchBooks from './pages/SearchBooks';
+import SavedBooks from './pages/SavedBooks';
+import Navbar from './components/navbar';
+
 const client = new ApolloClient({
   request: operation => {
     const token = localStorage.getItem('token');
@@ -23,7 +24,7 @@ function App() {
     <ApolloProvider client={client} className="app-background-color">
       <Router>
         <>
-          <Navigation/>
+          <Navbar />
           <Switch className="app-background-color">
             <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
