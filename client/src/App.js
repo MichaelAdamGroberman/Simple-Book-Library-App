@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-import Navbar from './components/navbar';
+import Navbar from './components/Nav';
 
 const client = new ApolloClient({
   request: operation => {
