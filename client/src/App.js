@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import SearchBooks from '/pages/SearchBooks';
 import SavedBooks from '/pages/SavedBooks';
-import Navigation from 'components/Navigation'
+import Navigation from 'components/Navigation';
 const client = new ApolloClient({
   request: operation => {
     const token = localStorage.getItem('token');
