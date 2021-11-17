@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { NavBar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpForm from './signup';
 import LoginForm from './login';
 
@@ -71,4 +71,4 @@ const AppNavbar = () => {
   );
 };
 
-export default Nav;
+export default Nav_bar;

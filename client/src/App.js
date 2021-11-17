@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-import Navbar from './components/Nav';
+import Nav_bar from './components/navbar';
 
 const client = new ApolloClient({
   request: operation => {
@@ -24,7 +24,7 @@ function App() {
     <ApolloProvider client={client} className="app-background-color">
       <Router>
         <>
-          <Navbar />
+          <Nav_bar />
           <Switch className="app-background-color">
             <Route exact path='/' component={SearchBooks} />
             <Route exact path='/saved' component={SavedBooks} />
