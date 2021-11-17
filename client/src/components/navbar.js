@@ -71,4 +71,4 @@ const AppNavbar = () => {
   );
 };
 
-export default Nav;
+export default NavBar;
