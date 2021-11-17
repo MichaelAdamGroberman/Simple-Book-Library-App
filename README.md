@@ -6,3 +6,4 @@ This project is a full-stack MERN app that uses the Google Books API to let you 
 
 This app was refactored from an existing, fully functional MERN app setup with a RESTful API. I refactored the existing RESTful API to a GraphQL API using Apollo Server with GraphQL queries and mutations along with MongoDB, Express, React and Node. Refactoring to a GraphQL API allows for less calls to the server and avoids over-fetching of data. 
 
+[Deployed App](https://thawing-brook-20797.herokuapp.com)
